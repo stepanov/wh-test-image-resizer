@@ -1,0 +1,1 @@
+# wh-test-image-resizer
