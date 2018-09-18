@@ -1,0 +1,20 @@
+{
+    "name": "wh-test-image-resizer",
+    "description": "WH Test image resizer script",
+    "authors": [
+        {
+            "name": "Michael Stepanov",
+            "email": "stepanov.michael@gmail.com",
+            "homepage": "http://stepanoff.org",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "ulrichsg/getopt-php": "^3.0",
+        "gumlet/php-image-resize": "1.9.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+
+}
