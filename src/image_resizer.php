@@ -1,6 +1,13 @@
 #!/usr/bin/env php
 <?php
 
+/**
+ * Image resizer
+ *
+ * @author: Mikhail Stepanov <stepanov.michael@gmail.com>
+ *
+ */
+
 require_once  __DIR__ . '/../vendor/autoload.php';
 
 use GetOpt\GetOpt;
@@ -9,6 +16,8 @@ use GetOpt\ArgumentException;
 use GetOpt\ArgumentException\Missing;
 use Gumlet\ImageResize;
 use Exception;
+
+define('VERSION', 'v1.0.0');
 
 $getOpt = new GetOpt();
 $getOpt->addOptions([
@@ -70,6 +79,13 @@ if ($getOpt->getOption('help')) {
     help();
 }
 
+/**
+ * function help()
+ *
+ * Displays hepl message and exit
+ *
+ * @return void
+ */
 function help()
 {
     echo <<<END
